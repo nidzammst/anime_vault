@@ -4,14 +4,15 @@ import { MotionDiv } from "./MotionDiv"
 
 export interface AnimeProp {
   id: string;
-  name: string;
-  image: {
-    original: string;
+  title: string;
+  images: {
+    jpg: {
+      image_url: string;
+    };
   };
-  kind: string;
   episodes: number;
-  episodes_aired: number;
   score: string;
+  type: string;
 }
 
 interface Prop {
